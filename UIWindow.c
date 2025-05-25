@@ -1,0 +1,16 @@
+#include "./UIWindow.h"
+
+DefineObjcMethod1(UIWindow*,UIWindowInitWithWindowScene,initWithWindowScene:,UIWindowScene*);
+DefineObjcMethod0(UIViewController *,UIWindowGetRootViewController,rootViewController);
+DefineObjcMethod1(void,UIWindowSetRootViewController,setRootViewController:,UIViewController*);
+DefineObjcMethod0(UIWindowLevel,UIWindowGetWindowLevel,windowLevel);
+DefineObjcMethod1(void,UIWindowSetWindowLevel,setWindowLevel:,UIWindowLevel);
+DefineObjcMethod0(BOOL,UIWindowCanResizeToFitContent,canResizeToFitContent);
+DefineObjcMethod1(void,UIWindowSetCanResizeToFitContent,setCanResizeToFitContent:,BOOL);
+DefineObjcMethod0(BOOL,UIWindowIsKeyWindow,isKeyWindow);
+DefineObjcMethod0(BOOL,UIWindowCanBecomeKeyWindow,canBecomeKeyWindow);
+DefineObjcMethod0(void,UIWindowMakeKeyAndVisible,makeKeyAndVisible);
+DefineObjcMethod0(void,UIWindowMakeKeyWindow,makeKeyWindow);
+DefineObjcMethod0(void,UIWindowBecomeKeyWindow,becomeKeyWindow);
+DefineObjcMethod0(void,UIWindowResignKeyWindow,resignKeyWindow);
+DefineObjcMethod0(UIWindowScene*,UIWindowGetWindowScene,windowScene);
