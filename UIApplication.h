@@ -1,8 +1,9 @@
 #pragma once
 #include "./cobjc.h"
 
-UIApplication *UIApplicationSharedApplication();
-CFSetRef UIApplicationGetConnectedScenes(UIApplication*);
-CFArrayRef UIApplicationGetWindows(UIApplication*);
-void UIApplicationOpenURL(UIApplication *self, CFURLRef url, CFDictionaryRef options, id completionHandler);
-UIWindow *UIApplicationGetKeyWindow(UIApplication*);
+DefineClassMethod(UIApplication,UIApplication*,UIApplicationSharedApplication,sharedApplication);
+
+DefineObjcMethod(CFSetRef,UIApplicationGetConnectedScenes,connectedScenes);
+DefineObjcMethod(CFArrayRef,UIApplicationGetWindows,windows);
+DefineObjcMethod(void,UIApplicationOpenURL,openURL:options:completionHandler:,CFURLRef,CFDictionaryRef,id);
+DefineObjcMethod(UIWindow*,UIApplicationGetKeyWindow,keyWindow);

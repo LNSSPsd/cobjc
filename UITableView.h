@@ -1,6 +1,7 @@
 #pragma once
 #include "./cobjc.h"
 
-void UITableViewDeselectRow(UITableView *table,NSIndexPath *indexPath,BOOL animated);
+DefineObjcMethod(void,UITableViewDeselectRow,deselectRowAtIndexPath:animated:,NSIndexPath*,BOOL);
+DefineObjcMethod(void,UITableViewReloadData,reloadData);
 
-UILabel *UITableViewCellGetTextLabel(UITableViewCell *);
+DefineObjcMethod(UILabel*,UITableViewCellGetTextLabel,textLabel);

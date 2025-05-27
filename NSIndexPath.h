@@ -1,5 +1,5 @@
 #pragma once
 #include "./cobjc.h"
 
-NSInteger NSIndexPathGetSection(NSIndexPath *);
-NSInteger NSIndexPathGetRow(NSIndexPath *);
+DefineObjcMethod(NSInteger,NSIndexPathGetSection,section);
+DefineObjcMethod(NSInteger,NSIndexPathGetRow,row);

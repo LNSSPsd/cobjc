@@ -8,4 +8,4 @@ typedef enum {
 	UISceneActivationStateBackground
 } UISceneActivationState;
 
-UISceneActivationState UISceneGetActivationState(UIScene *);
+DefineObjcMethod(UISceneActivationState,UISceneGetActivationState,activationState);

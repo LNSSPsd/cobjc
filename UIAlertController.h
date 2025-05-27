@@ -12,7 +12,7 @@ typedef enum {
 	UIAlertControllerStyleAlert
 } UIAlertControllerStyle;
 
-UIAlertController *UIAlertControllerCreate(CFStringRef,CFStringRef,UIAlertControllerStyle);
-void UIAlertControllerAddAction(UIAlertController *,UIAlertAction *);
+DefineClassMethod(UIAlertController,UIAlertController*,UIAlertControllerCreate,alertControllerWithTitle:message:preferredStyle:,CFStringRef,CFStringRef,UIAlertControllerStyle);
+DefineObjcMethod(void,UIAlertControllerAddAction,addAction:,UIAlertAction*);
 
-UIAlertAction *UIAlertActionCreate(CFStringRef,UIAlertActionStyle,id);
+DefineClassMethod(UIAlertAction,UIAlertAction*,UIAlertActionCreate,actionWithTitle:style:handler:,CFStringRef,UIAlertActionStyle,id);
